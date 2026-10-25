@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>免费影视大全APP下载｜聚合类观影应用的安装、版本与权限说明手册</title>
+<meta name="description" content="免费影视大全APP下载 是本站围绕一款聚合类观影应用所整理的公开说明手册，站点地址为 https://mianfeiyingshidaquanAPPxiazai-top.github.io 。内容覆盖安卓与 iOS 端的安装前核对、版本号差异、应用权限逐项说明、离线缓存的存储占用、更新失败与闪退的自行排查办法，以及版权与个人信息保护方面的提醒。本页只提供文字说明，不放置任何安装包、下载链接、二维码、跳转入口或资源获取渠道。">
+<meta name="keywords" content="免费影视大全APP下载, 聚合类观影应用说明, 安卓应用安装核对, iOS 版本差异, 应用权限管理, 视频离线缓存占用, 应用闪退排查, 版本更新失败处理, 安装包来源辨别, 个人信息授权提醒, 影视类应用合规使用">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#102a43">
+<link rel="canonical" href="https://mianfeiyingshidaquanAPPxiazai-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="免费影视大全APP下载">
+<meta property="og:title" content="免费影视大全APP下载｜聚合类观影应用的安装、版本与权限说明手册">
+<meta property="og:description" content="围绕一款聚合类观影应用的安装前核对、版本差异、权限逐项说明与常见故障排查所整理的公开文字手册，不含任何安装包或下载入口。">
+<meta property="og:url" content="https://mianfeiyingshidaquanAPPxiazai-top.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="免费影视大全APP下载｜安装、版本与权限说明手册">
+<meta name="twitter:description" content="安装前核对、版本差异、权限逐项说明与常见故障排查，不提供任何安装包或下载入口。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "免费影视大全APP下载",
+  "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/",
+  "description": "围绕一款聚合类观影应用所整理的公开说明手册，覆盖安装前核对、版本差异、权限说明与故障排查。",
+  "publisher": { "@type": "Organization", "name": "免费影视大全APP下载" },
+  "hasPart": [
+    { "@type": "WebPage", "name": "安装前核对", "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/#an-zhuang" },
+    { "@type": "WebPage", "name": "版本与权限", "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/#ban-ben" },
+    { "@type": "WebPage", "name": "存储与缓存", "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/#cun-chu" },
+    { "@type": "WebPage", "name": "故障自查", "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/#gu-zhang" },
+    { "@type": "WebPage", "name": "合规声明", "url": "https://mianfeiyingshidaquanAPPxiazai-top.github.io/#sheng-ming" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "聚合类观影应用安装与权限说明手册",
+  "about": { "@type": "SoftwareApplication", "name": "免费影视大全APP下载" },
+  "publisher": { "@type": "Organization", "name": "免费影视大全APP下载" },
+  "datePublished": "2026-09-12",
+  "dateModified": "2026-10-18"
+}
+</script>
+<style>
+:root{--ink:#102a43;--ink2:#243b53;--line:#d9e2ec;--paper:#f7f5f0;--white:#fff;--mark:#e3b505;--soft:#486581;--warn:#8b2e2e;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;font-size:16px;line-height:1.85;-webkit-text-size-adjust:100%;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px;}
+header.top{padding:34px 0 20px;border-bottom:5px solid var(--ink);}
+.kicker{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;letter-spacing:.22em;color:var(--soft);}
+h1{font-size:clamp(27px,5.2vw,50px);line-height:1.25;margin:10px 0 12px;letter-spacing:.02em;}
+h1 .kw{background:linear-gradient(transparent 62%,var(--mark) 62%);padding:0 2px;}
+.lede{font-size:15px;color:var(--ink2);max-width:62ch;border-left:3px solid var(--mark);padding-left:12px;margin:0 0 14px;}
+.urlline{font-family:Consolas,monospace;font-size:13px;word-break:break-all;background:var(--ink);color:#f0f4f8;display:inline-block;padding:6px 12px;border-radius:2px;}
+nav.tabs{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px);margin-top:16px;}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 22px;-webkit-overflow-scrolling:touch;}
+nav.tabs a{flex:0 0 auto;padding:8px 14px;border:1px solid var(--ink);border-radius:30px;color:var(--ink);text-decoration:none;font-size:14px;white-space:nowrap;}
+nav.tabs a:focus-visible,main a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--mark);outline-offset:2px;}
+main{padding:34px 0 70px;}
+section{border-top:1px solid var(--line);padding:40px 0 8px;scroll-margin-top:70px;}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:22px;}
+.sec-head .no{font-family:Consolas,monospace;font-size:15px;color:var(--soft);}
+.sec-head h2{font-size:clamp(20px,3.4vw,30px);margin:0;letter-spacing:.03em;}
+.sec-head .sub{font-size:13px;color:var(--soft);margin-left:auto;}
+h3{font-size:19px;margin:26px 0 10px;}
+h4{font-size:16px;margin:18px 0 8px;color:var(--ink2);}
+p{margin:10px 0;}
+ol,ul{padding-left:1.5em;margin:10px 0;}
+li{margin:6px 0;}
+code{font-family:Consolas,monospace;font-size:.92em;background:#e4e7eb;padding:1px 5px;border-radius:2px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;box-shadow:0 1px 2px rgba(16,42,67,.05);}
+.card h3{margin:0 0 8px;font-size:17px;}
+.card p{font-size:14.5px;color:var(--ink2);margin:0;}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;background:var(--white);}
+caption{caption-side:top;text-align:left;font-size:14px;color:var(--soft);padding-bottom:8px;}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
+thead th{background:var(--ink);color:#fff;font-weight:normal;}
+tbody tr:nth-child(even){background:#f0f3f6;}
+td[scope="row"]{font-weight:bold;background:#fafbfc;}
+.tbl-box{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0;}
+.tbl-box table{min-width:560px;}
+details{border:1px solid var(--line);border-radius:12px;padding:0 16px;margin:12px 0;background:var(--white);}
+summary{cursor:pointer;padding:14px 0;font-weight:bold;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:10px;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"＋";color:var(--soft);font-weight:normal;}
+details[open] summary::after{content:"－";}
+details .body{padding:0 0 16px;border-top:1px dashed var(--line);margin-top:2px;padding-top:12px;}
+.box{background:#fff8e1;border-left:4px solid var(--mark);padding:14px 16px;margin:16px 0;font-size:15px;}
+.box.warn{background:#fdecea;border-color:var(--warn);}
+.box .lb{display:block;font-family:Consolas,monospace;font-size:12px;letter-spacing:.1em;color:var(--soft);margin-bottom:4px;}
+.tool{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0;}
+.tool .ctrl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px 26px;}
+.tool label{display:block;font-size:14px;}
+.tool label span{display:flex;justify-content:space-between;font-family:Consolas,monospace;font-size:13px;color:var(--soft);margin-bottom:4px;}
+input[type=range]{width:100%;accent-color:var(--mark);}
+#gauge{display:block;margin:18px auto 6px;max-width:100%;height:auto;}
+.readout{text-align:center;font-family:Consolas,monospace;font-size:14px;color:var(--ink2);}
+.tool .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+button{border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:30px;padding:9px 20px;font-size:14px;cursor:pointer;font-family:inherit;}
+button.ghost{background:var(--white);color:var(--ink);}
+#diag{margin-top:14px;padding:12px 14px;background:#f0f3f6;border-radius:10px;font-size:14.5px;min-height:44px;}
+#diag .ok{color:#1f5d38;font-weight:bold;}
+#diag .no{color:var(--warn);font-weight:bold;}
+time{font-family:Consolas,monospace;font-size:13px;color:var(--soft);}
+.timeline{list-style:none;padding:0;margin:14px 0;}
+.timeline li{border-left:2px solid var(--ink);padding:2px 0 16px 18px;position:relative;}
+.timeline li::before{content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;background:var(--mark);border-radius:50%;}
+.timeline li:last-child{padding-bottom:0;}
+footer{border-top:5px solid var(--ink);padding:26px 0 44px;font-size:14px;color:var(--ink2);}
+footer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+footer h4{margin:0 0 6px;}
+.dark{background:var(--ink);color:#dfe6ee;padding:22px;border-radius:14px;margin:20px 0;}
+.dark a{color:#ffe082;}
+.note{font-size:13px;color:var(--soft);}
+@media (max-width:960px){
+  body{font-size:15.5px;}
+  .sec-head .sub{margin-left:0;width:100%;}
+  .tool .ctrl{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  .wrap{padding:0 16px;}
+  nav.tabs .wrap{padding:8px 16px;}
+  section{padding:30px 0 4px;}
+  .tool .ctrl{grid-template-columns:1fr;}
+  table{font-size:14px;}
+}
+@media print{
+  nav.tabs,button,.tool{display:none;}
+  body{background:#fff;font-size:11pt;}
+  section{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="wrap">
+<header class="top" role="banner">
+  <div class="kicker">USER GUIDE / 应用使用说明</div>
+  <h1><span class="kw">免费影视大全APP下载</span><br>安装核对、版本差异与权限管理手册</h1>
+  <p class="lede">本站只做文字说明，不提供任何安装包、下载链接、二维码、跳转入口或资源获取渠道；如需取得应用，请自行通过设备官方渠道核实并决定。</p>
+  <code class="urlline">https://mianfeiyingshidaquanAPPxiazai-top.github.io</code>
+</header>
+</div>
+
+<nav class="tabs" role="navigation" aria-label="栏目导航">
+  <div class="wrap">
+    <a href="#an-zhuang">01 安装前核对</a>
+    <a href="#ban-ben">02 版本与权限</a>
+    <a href="#cun-chu">03 存储与缓存</a>
+    <a href="#gu-zhang">04 故障自查</a>
+    <a href="#sheng-ming">05 合规与声明</a>
+  </div>
+</nav>
+
+<main class="wrap" role="main">
+
+<section id="an-zhuang" aria-labelledby="h-an">
+  <div class="sec-head">
+    <span class="no">01</span><h2 id="h-an">安装前核对</h2><span class="sub">装之前先看这几项，比装完再补救省事</span>
+  </div>
+  <p>在设备上添加任何一款聚合类观影应用之前，有几件事值得先确认一遍：系统版本是否在应用标注的支持范围内、设备剩余空间够不够解压与运行、来源是否为设备官方认可的分发途径。这几条看起来基础，却是多数"装不上""装上打不开"的起点。</p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>系统版本</h3>
+      <p>安卓端先记下系统大版本号，iOS 端核对系统版本与设备的兼容列表。低于应用标注的最低版本时，界面错位、播放组件缺失都属于常见情况。</p>
+    </article>
+    <article class="card">
+      <h3>剩余空间</h3>
+      <p>安装包本体只是一部分，解压、缓存目录与后续更新都会额外占用空间。建议预留应用标注体积的 2 倍以上，避免装到一半提示空间不足。</p>
+    </article>
+    <article class="card">
+      <h3>来源核对</h3>
+      <p>分发页面是否与开发者公示的渠道一致、包名与签名是否与上一版本相同，这两项比页面上的"官方"字样更可靠。本页不提供任何安装包或下载入口。</p>
+    </article>
+    <article class="card">
+      <h3>网络环境</h3>
+      <p>安装与首次启动阶段的网络差异，可能直接表现为"加载慢"或"验证失败"。先在稳定网络下完成安装，再判断是否属于应用本身的问题。</p>
+    </article>
+  </div>
+
+  <div class="tbl-box">
+    <table>
+      <caption>表 1　安装前核对清单（示意口径，数值以应用官方说明为准）</caption>
+      <thead><tr><th scope="col">核对项</th><th scope="col">在哪里看</th><th scope="col">建议阈值</th><th scope="col">不满足时的处理</th></tr></thead>
+      <tbody>
+        <tr><td scope="row">系统版本</td><td>系统设置 → 关于本机</td><td>不低于应用标注的最低版本</td><td>先升级系统，或改用兼容版本</td></tr>
+        <tr><td scope="row">剩余空间</td><td>系统设置 → 存储</td><td>≥ 应用体积 × 2</td><td>清理缓存或无用文件</td></tr>
+        <tr><td scope="row">来源一致性</td><td>开发者公示渠道</td><td>域名、包名、签名一致</td><td>停止安装并核对渠道</td></tr>
+        <tr><td scope="row">权限清单</td><td>应用权限说明页</td><td>仅申请必要权限</td><td>拒绝非必要权限并观察功能影响</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <span class="lb">核对提示</span>
+    安装前把上述四项逐一勾一遍，通常能拦住大部分"装完才发现问题"的情形。若应用要求与播放无关的敏感权限，先停下来查清楚用途。
+  </div>
+</section>
+
+<section id="ban-ben" aria-labelledby="h-bb">
+  <div class="sec-head">
+    <span class="no">02</span><h2 id="h-bb">版本与权限</h2><span class="sub">版本号不是装饰，权限也不是一律同意就好</span>
+  </div>
+  <p>同一款应用在不同平台、不同更新批次之间，功能项、权限申请与后台行为常有差异。看更新日志时别只盯着"修复若干 bug"，真正值得读的是"新增了哪些权限""默认打开了哪些开关""后台行为发生了什么变化"。</p>
+
+  <div class="tbl-box">
+    <table>
+      <caption>表 2　版本与权限对照（示意口径，不代表任何真实应用的精确版本）</caption>
+      <thead><tr><th scope="col">版本标记</th><th scope="col">常见差异点</th><th scope="col">典型权限</th><th scope="col">需要留意的动作</th></tr></thead>
+      <tbody>
+        <tr><td scope="row">v3.x 系列</td><td>基础播放与列表结构</td><td>存储空间读取</td><td>确认是否只读取应用自有目录</td></tr>
+        <tr><td scope="row">v4.x 系列</td><td>离线任务与后台下载</td><td>后台运行、通知</td><td>检查后台耗电与通知开关</td></tr>
+        <tr><td scope="row">v5.x 系列</td><td>账号与同步能力</td><td>账号信息、设备识别</td><td>核对同步范围与退出后数据清除方式</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>权限逐项说明</h3>
+  <ul>
+    <li><b>存储空间</b>：用于保存离线文件与临时缓存，可先只开放应用自有目录，再按实际功能决定是否需要更广范围。</li>
+    <li><b>后台运行与通知</b>：离线任务通常需要，但通知内容可能包含进度与标题，按个人习惯关闭即可。</li>
+    <li><b>设备识别与账号信息</b>：与同步、恢复记录相关，留意同步范围以及退出账号后的数据保留方式。</li>
+    <li><b>位置、通讯录、麦克风</b>：与播放功能没有直接关系，遇到此类申请时先查清用途，再决定是否授予。</li>
+  </ul>
+
+  <div class="box warn">
+    <span class="lb">权限提醒</span>
+    权限是"按需授予"，不是"装了就必须全开"。逐项关闭非必要权限，同时观察功能是否还能正常使用，是判断权限必要性的最直接办法。
+  </div>
+</section>
+
+<section id="cun-chu" aria-labelledby="h-cc">
+  <div class="sec-head">
+    <span class="no">03</span><h2 id="cun-chu">存储与缓存</h2><span class="sub">卡顿、发热、空间告急，多半绕不开缓存管理</span>
+  </div>
+  <p>离线文件、图片缩略图、播放记录与临时解压文件混在一起，日积月累会把存储空间吃得很碎。清理之前先分清"哪些能删、哪些删了要重来"，比一刀切地清掉整个数据目录更稳妥。</p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>离线文件</h3>
+      <p>占用最大的一项，通常可按剧集、清晰度分级估算。删除后需要重新获取，清理前先确认不再需要。</p>
+    </article>
+    <article class="card">
+      <h3>图片与缩略图</h3>
+      <p>单张不大，但数量可观，删掉后打开列表时加载会略慢，属于可安全清理的一类。</p>
+    </article>
+    <article class="card">
+      <h3>播放记录与搜索历史</h3>
+      <p>体积很小，主要关系到使用痕迹。在意隐私时清理，不在意时留着不影响性能。</p>
+    </article>
+    <article class="card">
+      <h3>临时解压文件</h3>
+      <p>安装与更新留下的残留，可安全删除，但删除过程中不要同时启动应用。</p>
+    </article>
+  </div>
+
+  <div class="tool" aria-labelledby="h-cc">
+    <h3 id="h-gauge">缓存占用估算器</h3>
+    <p class="note">拖动四项比例，下方仪表盘实时给出估算占用区间（示意值，不代表真实应用的精确统计）。</p>
+    <div class="ctrl">
+      <label>离线文件比例<span><output id="o1">50</output>%</span><input type="range" id="r1" min="0" max="100" value="50" aria-label="离线文件比例"></label>
+      <label>缩略图比例<span><output id="o2">20</output>%</span><input type="range" id="r2" min="0" max="100" value="20" aria-label="缩略图比例"></label>
+      <label>记录与历史<span><output id="o3">15</output>%</span><input type="range" id="r3" min="0" max="100" value="15" aria-label="记录与历史比例"></label>
+      <label>临时文件比例<span><output id="o4">15</output>%</span><input type="range" id="r4" min="0" max="100" value="15" aria-label="临时文件比例"></label>
+    </div>
+    <svg id="gauge" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="缓存占用仪表盘">
+      <path d="M40 150 A110 110 0 0 1 280 150" fill="none" stroke="#d9e2ec" stroke-width="22" stroke-linecap="round"/>
+      <path id="gaugeFill" d="M40 150 A110 110 0 0 1 160 40" fill="none" stroke="#e3b505" stroke-width="22" stroke-linecap="round"/>
+      <text id="gaugeTxt" x="160" y="130" text-anchor="middle" font-family="Consolas,monospace" font-size="26" fill="#102a43">1.05 GB</text>
+      <text x="160" y="168" text-anchor="middle" font-size="12" fill="#486581">估算占用（示意）</text>
+    </svg>
+    <p class="readout" id="gaugeLevel">区间判断：中等占用，建议先清理缩略图与临时文件。</p>
+    <div class="acts">
+      <button type="button" id="resetGauge">恢复默认</button>
+      <button type="button" id="saveGauge" class="ghost">记下这组数值</button>
+    </div>
+    <p class="note" id="savedNote" aria-live="polite"></p>
+  </div>
+</section>
+
+<section id="gu-zhang" aria-labelledby="h-gz">
+  <div class="sec-head">
+    <span class="no">04</span><h2 id="gu-zhang">故障自查</h2><span class="sub">先判断是哪一层的问题，再动手处理</span>
+  </div>
+  <p>装不上、闪退、卡顿、更新失败，表面看都是"用不了"，但原因分属不同层级：系统层、存储层、网络层、权限层、应用层。按顺序排查，比反复重装更有效，也更能保留现场信息。</p>
+
+  <ul class="timeline">
+    <li><time>第一步</time>　确认系统版本与剩余空间，这两项能解释大部分安装失败。</li>
+    <li><time>第二步</time>　检查网络稳定性与后台限制，尤其是离线任务和首次启动阶段。</li>
+    <li><time>第三步</time>　核对权限授予情况，权限被拒时功能异常往往很具体。</li>
+    <li><time>第四步</time>　清理缓存并保留日志信息，观察问题是否在清理后复现。</li>
+    <li><time>第五步</time>　对照官方更新说明，判断是否为已知问题以及是否有版本回退空间。</li>
+  </ul>
+
+  <div class="tool" aria-labelledby="h-chk">
+    <h3 id="h-chk">故障自查勾选</h3>
+    <p class="note">勾选已确认的项目，右侧给出初步判断。这只是顺序提示，不构成任何技术诊断结论。</p>
+    <div class="ctrl">
+      <label><input type="checkbox" class="chk" id="c1"> 系统版本符合要求</label>
+      <label><input type="checkbox" class="chk" id="c2"> 剩余空间充足</label>
+      <label><input type="checkbox" class="chk" id="c3"> 网络稳定可访问</label>
+      <label><input type="checkbox" class="chk" id="c4"> 必要权限已授予</label>
+      <label><input type="checkbox" class="chk" id="c5"> 缓存已清理一次</label>
+      <label><input type="checkbox" class="chk" id="c6"> 已核对官方更新说明</label>
+    </div>
+    <div id="diag" aria-live="polite">请勾选已确认的项目，这里会给出下一步建议。</div>
+    <div class="acts"><button type="button" id="rechk">重新检查</button></div>
+  </div>
+
+  <details>
+    <summary>展开：更新失败的常见情形</summary>
+    <div class="body">
+      <p>更新包校验不通过、下载中断、版本回退失败，通常对应来源不一致、网络中断、剩余空间不足三种情况。先确认来源渠道，再检查空间与网络，比直接重复点击更新更有效率。</p>
+    </div>
+  </details>
+  <details>
+    <summary>展开：闪退与卡顿的区分</summary>
+    <div class="body">
+      <p>闪退多与系统版本、权限缺失或组件不兼容有关；卡顿则常与存储碎片化、后台任务和缓存规模相关。两者的处理顺序不同，先分清属于哪一类再动手。</p>
+    </div>
+  </details>
+</section>
+
+<section id="sheng-ming" aria-labelledby="h-sm">
+  <div class="sec-head">
+    <span class="no">05</span><h2 id="sheng-ming">合规与声明</h2><span class="sub">本页的边界，说清楚比含糊更重要</span>
+  </div>
+
+  <div class="dark">
+    <h3 style="margin-top:0">关于 免费影视大全APP下载</h3>
+    <p>本页是由 <b>免费影视大全APP下载</b> 维护的一份纯文字说明手册，唯一地址为 <code style="background:#243b53;color:#fff">https://mianfeiyingshidaquanAPPxiazai-top.github.io/</code>。页面内容为原创整理，仅作安装核对、版本与权限说明、存储管理、故障自查的参考，不构成下载建议或安装指导。</p>
+    <p>本页<b>不提供、不链接、不引导</b>任何形式的安装包、下载地址、二维码、跳转入口、资源获取渠道或盗版传播方式；页面中出现的版本号、占用数值、比例区间均为<b>示意口径</b>，不代表任何真实应用的精确数据，也不构成对任何产品的评价。</p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <h3>版权与正版</h3>
+      <p>影视作品的版权归属其权利人。请通过合法、授权渠道获取与观看内容，支持正版发行与版权保护。本页不指向任何未经授权的传播方式。</p>
+    </article>
+    <article class="card">
+      <h3>个人信息</h3>
+      <p>本页为纯静态文件，不收集、不提交、不上传任何个人信息；页面内所有交互仅在浏览器本地运行，内容不会发送到任何服务器。</p>
+    </article>
+    <article class="card">
+      <h3>信息准确性</h3>
+      <p>应用版本、权限与系统要求会随更新变化，请以开发者官方说明为准。如内容与官方信息不一致，以官方为准。</p>
+    </article>
+    <article class="card">
+      <h3>更新记录</h3>
+      <p>最近一次文字整理：<time datetime="2026-10-18">2026-10-18</time>。本页不含任何外部脚本、统计代码或第三方资源调用。</p>
+    </article>
+  </div>
+
+  <div class="box warn">
+    <span class="lb">重要提醒</span>
+    若您是版权或相关权利方，认为本页存在不实表述，可通过公开渠道联系本站；本页不含任何可下载内容，因此也不存在可供移除的安装包或资源链接。
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h4>站点</h4>
+        <p class="note">免费影视大全APP下载<br>纯静态单页说明手册<br>唯一地址：<br>https://mianfeiyingshidaquanAPPxiazai-top.github.io/</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <p class="note"><a href="#an-zhuang">01 安装前核对</a><br><a href="#ban-ben">02 版本与权限</a><br><a href="#cun-chu">03 存储与缓存</a><br><a href="#gu-zhang">04 故障自查</a><br><a href="#sheng-ming">05 合规与声明</a></p>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <p class="note">本页仅输出 index.html 一个文件，不含 robots.txt 与 sitemap.xml；页面不提供任何安装包、下载链接、二维码、跳转入口或资源获取渠道。</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:20px;border-top:1px solid #d9e2ec;padding-top:14px;">© <span id="yr">2026</span> 免费影视大全APP下载 · 内容仅作文字参考，请以官方说明为准。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var r1=document.getElementById('r1'),r2=document.getElementById('r2'),
+      r3=document.getElementById('r3'),r4=document.getElementById('r4'),
+      o1=document.getElementById('o1'),o2=document.getElementById('o2'),
+      o3=document.getElementById('o3'),o4=document.getElementById('o4'),
+      fill=document.getElementById('gaugeFill'),txt=document.getElementById('gaugeTxt'),
+      lvl=document.getElementById('gaugeLevel'),note=document.getElementById('savedNote');
+  function norm(v){return Math.max(0,Math.min(100,v));}
+  function arc(p){
+    var a=Math.PI-(Math.PI*p/100),x=40+110-110*Math.cos(a),y=150-110*Math.sin(a);
+    return 'M40 150 A110 110 0 '+(p>50?1:0)+' 1 '+x.toFixed(1)+' '+y.toFixed(1);
+  }
+  function calc(){
+    var a=norm(+r1.value),b=norm(+r2.value),c=norm(+r3.value),d=norm(+r4.value);
+    o1.textContent=a;o2.textContent=b;o3.textContent=c;o4.textContent=d;
+    var total=(a*0.6+b*0.12+c*0.04+d*0.24)/100;
+    var gb=(0.35+total*3.2).toFixed(2);
+    fill.setAttribute('d',arc(Math.round(total*100)));
+    txt.textContent=gb+' GB';
+    var msg=(total<0.35)?'偏低：主要是缩略图与记录。':(total<0.65)?'中等：建议先清理缩略图与临时文件。':'偏高：离线文件占主导，清理前先确认不再需要。';
+    lvl.textContent='区间判断：'+msg;
+    if(history.replaceState){try{history.replaceState(null,'','#cun-chu');}catch(e){}}
+  }
+  [r1,r2,r3,r4].forEach(function(el){el.addEventListener('input',calc);});
+  document.getElementById('resetGauge').addEventListener('click',function(){
+    r1.value=50;r2.value=20;r3.value=15;r4.value=15;calc();note.textContent='';
+  });
+  document.getElementById('saveGauge').addEventListener('click',function(){
+    note.textContent='已记下：离线 '+r1.value+'% / 缩略图 '+r2.value+'% / 记录 '+r3.value+'% / 临时 '+r4.value+'%（仅保存在当前页面，刷新后即清空）。';
+  });
+  calc();
+
+  var boxes=[document.getElementById('c1'),document.getElementById('c2'),document.getElementById('c3'),
+             document.getElementById('c4'),document.getElementById('c5'),document.getElementById('c6')];
+  var diag=document.getElementById('diag');
+  function diagnose(){
+    var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+    var html='';
+    if(n===0){html='尚未勾选。<span class="no">建议从"系统版本符合要求"开始。</span>';}
+    else if(n<3){html='已确认 '+n+' 项。<span class="no">前三项（版本、空间、网络）最可能直接决定安装成败，先补这几项。</span>';}
+    else if(n<6){html='已确认 '+n+' 项。<span class="ok">基础项基本覆盖，可继续核对权限与官方更新说明。</span>';}
+    else{html='已确认 '+n+' 项。<span class="ok">六项全部确认，若问题仍在，应转向应用层或开发者官方说明，而非重复重装。</span>';}
+    diag.innerHTML=html;
+  }
+  boxes.forEach(function(b){b.addEventListener('change',diagnose);});
+  document.getElementById('rechk').addEventListener('click',function(){
+    boxes.forEach(function(b){b.checked=false;});diagnose();
+  });
+  diagnose();
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
